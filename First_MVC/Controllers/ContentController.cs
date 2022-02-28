@@ -12,7 +12,7 @@ namespace First_MVC.Controllers
         // return Content("Zehra Kıran");
         public ContentResult Index()
         {
-            return Content("<b>Zehra kiran</b>", "text/html ,charset=utf-8");
+            return Content("<b>Emine Koşak</b>", "text/html ,charset=utf-8");
         }
 
 
@@ -23,7 +23,11 @@ namespace First_MVC.Controllers
 
         public ContentResult Index3()
         {
-            var xml = "<proucts>" + "<product><name>PC</name></prouct>" + "<product><name>mouse</name></prouct>" + "</products>";
+            var xml = "<proucts>" + 
+                "<product><name>PC</name></prouct>" + 
+                "<product><name>mouse</name></prouct>" + 
+                "</products>";
+
             return Content(xml, "application/xml ");
         }
     }

@@ -95,8 +95,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\HttpController.cs" />
     <Compile Include="Controllers\JavascriptController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
+    <Compile Include="Controllers\RedirectController.cs" />
     <Compile Include="Controllers\ViewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -115,6 +117,7 @@
     <Content Include="Views\View\Partial.cshtml" />
     <Content Include="Views\View\Index2.cshtml" />
     <Content Include="Views\Javascript\Index.cshtml" />
+    <Content Include="Views\Redirect\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,6 +129,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\Http\" />
     <Folder Include="Views\Json\" />
   </ItemGroup>
   <PropertyGroup>
